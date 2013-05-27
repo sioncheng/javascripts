@@ -1,0 +1,4 @@
+javascripts
+===========
+
+javascript practices
