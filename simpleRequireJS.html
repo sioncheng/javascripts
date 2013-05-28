@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>simple require js</title>
+		<script src="simpleRequire.js"></script>
+	</head>
+	<body>
+		<h1>SimpleRequireJS</h1>
+		<script>
+           simpleRequire('add',function(add){
+           	console.log(add);
+           });
+           simpleRequire('add',function(add){
+           	console.log(add(1,2));
+           });
+
+           setTimeout(function(){
+           	 simpleRequire('add',function(add){
+           	 	console.log(add(100,200));
+           	 });
+           },2000);
+		</script>
+	</body>
+</html>

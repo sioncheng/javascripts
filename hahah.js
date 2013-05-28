@@ -1,0 +1,4 @@
+define('hahah',function(){
+	
+	return {};
+});
