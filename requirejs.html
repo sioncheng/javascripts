@@ -8,7 +8,14 @@
 		<h1>RequireJS</h1>
 		<script>
            require(['hahah'],function(hahah){
-           	alert(hahah);
+
+           		console.log(hahah.getI());
+
+           		hahah.setI(1000);
+           });
+
+           require(['hahah'],function(hahah){
+           		console.log(hahah.getI()); /// 1000, module is singleton
            });
 		</script>
 	</body>
